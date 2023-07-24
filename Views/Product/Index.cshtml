@@ -1,0 +1,41 @@
+@model IEnumerable<pruebaTecnica.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Clients</h1>
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create new client</a>
+</p>
+<table class="table">
+    <thead>
+        <tr> <!--fila-->
+            <th>@Html.DisplayNameFor(model=>model.NameProduct)</th>
+            <th>@Html.DisplayNameFor(model=>model.ClientId)</th>
+            <th>@Html.DisplayNameFor(model=>model.Description)</th>
+            <th>@Html.DisplayNameFor(model=>model.Price)</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    @* <tbody>
+@foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem=>item.NameProduct)</td>
+                <td>@Html.DisplayFor(modelItem=>item.ClientId)</td>
+                <td>@Html.DisplayFor(modelItem=>item.Description)</td>
+                <td>@Html.DisplayFor(modelItem=>item.Price)</td>
+                <td>
+                    <button asp-action="Edit" class="btn btn-warning" asp-route-id="@item.ProductId">Edit</button>
+                    <button asp-action="Details" class="btn btn-warning" asp-route-id="@item.ProductId">Details</button>
+                    <button asp-action="Delete" class="btn btn-warning" asp-route-id="@item.ProductId">Delete</button>
+                </td>
+            </tr>
+
+        }
+
+    </tbody> *@
+</table>
