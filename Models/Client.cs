@@ -17,7 +17,7 @@ public class Client
     public string NameClient { get; set; }
     public string LastnameClient { get; set; }
 
-    //public int DNIClient {get;set;}
+    public int DNIClient {get;set;}
     public string AdressClient { get; set; }
     
     //[Phone]

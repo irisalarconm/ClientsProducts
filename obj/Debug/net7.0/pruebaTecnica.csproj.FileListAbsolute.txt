@@ -8,13 +8,16 @@ C:\platzi\pruebaTecnica\bin\Debug\net7.0\pruebaTecnica.dll
 C:\platzi\pruebaTecnica\bin\Debug\net7.0\pruebaTecnica.pdb
 C:\platzi\pruebaTecnica\bin\Debug\net7.0\Azure.Core.dll
 C:\platzi\pruebaTecnica\bin\Debug\net7.0\Azure.Identity.dll
+C:\platzi\pruebaTecnica\bin\Debug\net7.0\Humanizer.dll
 C:\platzi\pruebaTecnica\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\platzi\pruebaTecnica\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
 C:\platzi\pruebaTecnica\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
 C:\platzi\pruebaTecnica\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\platzi\pruebaTecnica\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\platzi\pruebaTecnica\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\platzi\pruebaTecnica\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\platzi\pruebaTecnica\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\platzi\pruebaTecnica\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
 C:\platzi\pruebaTecnica\bin\Debug\net7.0\Microsoft.Identity.Client.dll
 C:\platzi\pruebaTecnica\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
 C:\platzi\pruebaTecnica\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
@@ -25,6 +28,8 @@ C:\platzi\pruebaTecnica\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenI
 C:\platzi\pruebaTecnica\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\platzi\pruebaTecnica\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
 C:\platzi\pruebaTecnica\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\platzi\pruebaTecnica\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\platzi\pruebaTecnica\bin\Debug\net7.0\System.CodeDom.dll
 C:\platzi\pruebaTecnica\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
 C:\platzi\pruebaTecnica\bin\Debug\net7.0\System.Drawing.Common.dll
 C:\platzi\pruebaTecnica\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
@@ -69,8 +74,3 @@ C:\platzi\pruebaTecnica\obj\Debug\net7.0\refint\pruebaTecnica.dll
 C:\platzi\pruebaTecnica\obj\Debug\net7.0\pruebaTecnica.pdb
 C:\platzi\pruebaTecnica\obj\Debug\net7.0\pruebaTecnica.genruntimeconfig.cache
 C:\platzi\pruebaTecnica\obj\Debug\net7.0\ref\pruebaTecnica.dll
-C:\platzi\pruebaTecnica\bin\Debug\net7.0\Humanizer.dll
-C:\platzi\pruebaTecnica\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
-C:\platzi\pruebaTecnica\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
-C:\platzi\pruebaTecnica\bin\Debug\net7.0\Mono.TextTemplating.dll
-C:\platzi\pruebaTecnica\bin\Debug\net7.0\System.CodeDom.dll

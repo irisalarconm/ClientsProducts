@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using pruebaTecnica.Models;
 using pruebaTecnica.Services;
+using System.Runtime.CompilerServices;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace pruebaTecnica.Controllers;
@@ -32,44 +34,49 @@ public class ClientController : Controller
     }
 
     [HttpGet]
-    // public IActionResult Index()
-    // {
-    //     var getClients = clientService.Get();
-    //     return View(getClients);
-    // }
-
-    public IActionResult Get() //Get() //Index
+    public IActionResult Index()
     {
-        try{
-            return Ok(clientService.Get());
-        } catch (DbUpdateException ex)
-        {
-            string excep = ex.ToString();
-            return Ok(excep);
-        } 
-        
+        var getClients = clientService.Get();
+        return View(getClients);
     }
+
+    //public IActionResult Get() //Get() //Index
+    //{
+    //       return Ok(clientService.Get());
+    //}
+
+    //public IActionResult Create()
+    //{
+    //    return View();
+    //}
 
     [HttpPost]
 
-    public IActionResult Post([FromBody] Client client)
+    public async Task <IActionResult> Post([FromBody] Client client)
     {
-        clientService.Save(client);
+
+        await clientService.Save(client);
+       
         return Ok();
     }
 
+    //! VISTA FORMULARIO //
+
+    
+
+
     [HttpPut("{id}")]
-    public IActionResult Update(int id, [FromBody] Client client)
+    public async Task<IActionResult> Update(int id, [FromBody] Client client)
     {
-        clientService.Update(id, client);
+        await clientService.Update(id, client);
         return Ok();
     }
 
     [HttpDelete("{id}")]
 
-    public IActionResult Delete(int id)
+    public async Task<IActionResult> Delete(int id)
     {
-        clientService.Delete(id);
+        await clientService.Delete(id);
         return Ok();
     }
 

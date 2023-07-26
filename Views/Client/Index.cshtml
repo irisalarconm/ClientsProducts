@@ -4,18 +4,18 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Clients</h1>
-<h2>Index</h2>
+<h1>clients</h1>
+<h2>index</h2>
 
 <p>
-    <a asp-action="Create">Create new client</a>
+    <a asp-action="Create">create new client</a>
 </p>
-<table class="table">
+<table class="Table">
     <thead>
-        <tr> <!--fila-->
+        <tr> fila
             <th>@Html.DisplayNameFor(model=>model.NameClient)</th>
             <th>@Html.DisplayNameFor(model=>model.LastnameClient)</th>
-            @* <!--<th>@Html.DisplayNameFor(model=>model.DNIClient)</th>--> *@
+            <th>@Html.DisplayNameFor(model=>model.DNIClient)</th>
             <th>@Html.DisplayNameFor(model=>model.AdressClient)</th>
             <th>@Html.DisplayNameFor(model=>model.Phone)</th>
             <th>@Html.DisplayNameFor(model=>model.status)</th>
@@ -26,20 +26,20 @@
 @foreach (var item in Model)
         {
             <tr>
-                <td>@Html.DisplayFor(modelItem=>item.NameClient)</td>
-                <td>@Html.DisplayFor(modelItem=>item.LastnameClient)</td>
-                @* <td>@Html.DisplayFor(modelItem=>item.DNIClient)</td> *@
-                <td>@Html.DisplayFor(modelItem=>item.AdressClient)</td>
-                <td>@Html.DisplayFor(modelItem=>item.Phone)</td>
-                <td>@Html.DisplayFor(modelItem=>item.status)</td>
+                <td>@Html.DisplayFor(modelitem=>item.NameClient)</td>
+                <td>@Html.DisplayFor(modelitem=>item.LastnameClient)</td>
+                <td>@Html.DisplayFor(modelitem=>item.DNIClient)</td>
+                <td>@Html.DisplayFor(modelitem=>item.AdressClient)</td>
+                <td>@Html.DisplayFor(modelitem=>item.Phone)</td>
+                <td>@Html.DisplayFor(modelitem=>item.status)</td>
                 <td>
-                    <button asp-action="Edit" class="btn btn-warning" asp-route-id="@item.ClientId">Edit</button>
-                    <button asp-action="Details" class="btn btn-warning" asp-route-id="@item.ClientId">Details</button>
-                    <button asp-action="Delete" class="btn btn-warning" asp-route-id="@item.ClientId">Delete</button>
+                    <a asp-action="Edit" class="btn btn-warning" asp-route-id="@item.ClientId">edit</a>
+                    <a asp-action="Details" class="btn btn-warning" asp-route-id="@item.ClientId">details</a>
+                    <a asp-action="Delete" class="btn btn-warning" asp-route-id="@item.ClientId">delete</a>
                 </td>
             </tr>
 
         }
 
     </tbody>
-</table>
+</table>0'

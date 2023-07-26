@@ -24,24 +24,24 @@ public class ProductController : ControllerBase
 
     [HttpPost]
 
-    public IActionResult Post([FromBody] Product product)
+    public async Task<IActionResult> Post([FromBody] Product product)
     {
-        productService.Save(product);
+        await productService.Save(product);
         return Ok();
     }
 
     [HttpPut("{id}")]
-    public IActionResult Update(int id, [FromBody] Product product)
+    public async Task<IActionResult> Update(int id, [FromBody] Product product)
     {
-        productService.Update(id, product);
+        await productService.Update(id, product);
         return Ok();
     }
 
     [HttpDelete("{id}")]
 
-    public IActionResult Delete(int id)
+    public async Task<IActionResult> Delete(int id)
     {
-        productService.Delete(id);
+        await productService.Delete(id);
         return Ok();
     }
 

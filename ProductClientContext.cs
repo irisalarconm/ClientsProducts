@@ -25,7 +25,7 @@ public class ProductClientContext: DbContext
             client.Property(p => p.ClientId).ValueGeneratedOnAdd();
             client.Property(p=>p.NameClient).IsRequired().HasMaxLength(150);
             client.Property(p=>p.LastnameClient).IsRequired().HasMaxLength(150);
-            //client.HasIndex(p=>p.DNIClient).IsUnique();
+            client.HasIndex(p=>p.DNIClient).IsUnique();
             client.Property(p=>p.AdressClient).IsRequired();
             client.Property(p=>p.Phone).IsRequired();
             client.Property(p=>p.status).IsRequired();

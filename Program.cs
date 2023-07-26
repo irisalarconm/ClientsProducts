@@ -8,7 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddDbContext<ProductClientContext>(options=>options.UseSqlServer(builder.Configuration.GetConnectionString("cnPruebaDb")));
+builder.Services.AddDbContext<ProductClientContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("cnPruebaDb")));
 
 
 //TrustServerCertificate = True;

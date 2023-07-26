@@ -20,15 +20,10 @@ public class ClientService : IClientService
 
     public async Task Save(Client client)
     {
-        try{
            
             context.Add(client);
 
-            await context.SaveChangesAsync();
-        } catch (DbUpdateException ex)
-        {
-            Console.WriteLine(ex.ToString());
-        } 
+            await context.SaveChangesAsync(true);
         
     }
 
@@ -39,7 +34,7 @@ public class ClientService : IClientService
         if(actualClient != null){
             actualClient.NameClient = client.NameClient;
             actualClient.LastnameClient = client.LastnameClient;
-            //actualClient.DNIClient = client.DNIClient;
+            actualClient.DNIClient = client.DNIClient;
             actualClient.AdressClient = client.AdressClient;
             actualClient.Phone = client.Phone;
             actualClient.status = client.status;
